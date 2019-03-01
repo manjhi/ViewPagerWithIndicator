@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bz"
+    android:weightSum="3"
+    tools:context=".Activity.FirstPageActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="2.9"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="1"
+        android:id="@+id/viewPager"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:id="@+id/dots"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_18dp"
+        android:layout_weight="0.1"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_below="@id/dots"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:background="@drawable/back_button_shape"
+            android:textAllCaps="false"
+            android:text="Log in"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_ring_button"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+        <TextView
+            android:id="@+id/belowtextData"
+            android:layout_margin="@dimen/margin_10dp"
+            android:textSize="@dimen/size_14sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try ZeeMail in all its glory,free for 14 days,
+on all your device.No string attached.
+Subscribe ony if you wish to continue."/>
+        <View
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_8dp"/>
+    </LinearLayout>
+</LinearLayout>
